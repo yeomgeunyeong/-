@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+#wrap{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    /* background-color: #ddd; */
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    /* background-color: #eee; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 40px;
+}
+
+.nav{}
+
+.main{}
+
+.main > li{
+    float: left;
+    position: relative;
+}
+
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(177, 160, 138);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main > li:hover > a{
+    color: white;
+    background-color: rgb(211, 193, 169);
+}
+
+.sub{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+.sub li{}
+
+.sub li a{
+    display: block;
+    background-color: rgb(248, 232, 212);
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.sub li a:hover{
+    background-color: sienna;
+    color: white;
+}
+
+#section{
+    width: 100%;
+    height: 500px;
+    /* background-color: #ccc; */
+}
+
+.slide_img{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.move{
+    position: absolute;
+    width: 1200px;
+    height: 900px;
+    top: 0;
+    left: 0;
+}
+
+.move li{
+    width: 1200px;
+    height: 300px;
+}
+
+.move li a{}
+
+.move li a img{}
+
+.container{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > div{
+    height: 200px;
+    width: 390px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.container h2{
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid darkolivegreen;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    border-bottom: none;
+    /* border-bottom-color: #ddd;    */
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+}
+
+.container h2.off{
+    background-color: #ddd;
+}
+
+.noti_gall{}
+.noti_gall ul{
+    position: absolute;
+    top: 34px;
+    left: 0;
+    height: 166px;
+    width: 390px;
+    border: 1px solid darkolivegreen;
+    border-radius: 0 10px 10px 10px;
+    background-color: #fff;
+}
+
+.notice{}
+.notice ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.notice ul li{
+    /* display: flex;
+    justify-content: space-between; */
+    overflow: hidden;
+    padding: 7px 0;
+    border-bottom: 1px dotted olive;
+}
+
+.notice ul li a{
+    display: block;
+    width: 70%;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+
+    float: left;
+}
+
+.notice ul li span{
+    float: right;
+    font-size: 13px;
+    color: dimgray;
+}
+
+.gallery{}
+
+.gallery ul{
+    display: none;
+    padding: 10px;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery ul li{}
+
+.gallery ul li a{}
+
+.gallery ul li img{}
+
+.gallery h2{
+    left: 101px;
+}
+
+.banner{}
+
+.baro{}
+
+.banner p, .baro p{
+    width: 100%;
+    height: 166px;
+    border: 1px solid darkolivegreen;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    border-radius: 0 10px 10px 10px;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    /* background-color: #999; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(177, 160, 138);
+}
+
+.f_logo{}
+
+.f_copy{}
+
+.f_sns{}
+.f_sns a{
+    padding-left: 10px;
+}
+
+.pop{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: 10px solid rgb(177, 160, 138);
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;   
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
+}
+
+.pop h3{
+    font-size: 25px;
+    font-weight: bold;  
+    text-transform: uppercase;
+    line-height: 30px;
+    border-bottom: 1px dashed darkolivegreen;
+}
+
+.pop p{
+    padding-top: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.pop p::first-letter{
+    font-size: 20px;
+    color: sienna;
+    font-weight: bold;
+}
+
+.close{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
